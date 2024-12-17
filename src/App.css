@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f4f8; /* Light background color */
+  background-image: url("https://scontent.fmnl8-1.fna.fbcdn.net/v/t39.30808-6/453502415_8758492344167883_7320148157000651122_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=f727a1&_nc_eui2=AeGAKQ2wcqkKVkYahKm5J-7NxZznJ6RLQYnFnOcnpEtBiVh5bh5A6Fqyd8GadL4k6ZHBI32ORjuebg6WFRshgv6r&_nc_ohc=4bVYWTTOFDIQ7kNvgGiKGAt&_nc_zt=23&_nc_ht=scontent.fmnl8-1.fna&_nc_gid=ArKXxoI3t2ZcgVMfI9uq-Uq&oh=00_AYBqEot681rlx_9cuGojabWczF-W50bbMAAg0lGsOn9eXw&oe=6767936D");
+  background-size: cover;
+  background-position: center;
+  color: #333; /* Dark text for readability */
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+/* Container Styling */
+.container {
+  padding: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.9); /* Light white background */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur; /* Slight blur effect for background */
+}
+
+/* Header Section */
+header {
+  background-color: #e53935; /* Red color for the header */
+  color: white; /* Title text in white */
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 2.4rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading Styles */
+h1 {
+  color: white; /* Title text color set to white */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: rgb(0, 0, 0); /* Title text color set to white */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Button Styling */
+button {
+  background-color: #e53935; /* Matching button color with header */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #c62828; /* Darker red on hover */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Textarea Styling */
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 150px;
+  padding: 18px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  margin-bottom: 20px;
+  resize: both;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #e53935; /* Red border on focus */
+  background-color: #f1f1f1;
+}
+
+/* Post List Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 400px; /* Set max height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+li {
+  background-color: #ffffff; /* White background for posts */
+  color: #333;
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+}
+
+li:hover {
+  transform: translateY(-4px);
+  background-color: #f7f7f7; /* Light grey on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+
+  textarea {
+    padding: 16px;
+  }
+}
